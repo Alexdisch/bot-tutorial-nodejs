@@ -26,7 +26,7 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://amazingyoungwomen.tumblr.com/image/116681965225");
+    postMessage("http://36.media.tumblr.com/06086ac9d889c7729d928d4aa5d1405b/tumblr_nk8g0fFErk1s2yr14o1_1280.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
