@@ -29,14 +29,19 @@ function respond() {
     postMessage("https://i.imgur.com/B5BSVqH.png");
     this.res.end();
   } 
+else if(request.text && botRegexHarp.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://amazingyoungwomen.tumblr.com/image/116681965225");
+    this.res.end()
+  }
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
     this.res.end();
   }
-  else if(request.text && botRegexHarper.test(request.text)) {
+  else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/1529913_744630922214259_657723082_o.jpg");
+    postMessage("https://docs.google.com/document/d/1hSuEG7oplnx4IX6HGsMOjsWb9TCqC4-F1NLjuBz5PCM/edit");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
