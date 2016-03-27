@@ -34,7 +34,7 @@ function respond() {
     postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
     this.res.end();
   }
-  else if(request.text && botHarper.test(request.text)) {
+  else if(request.text && botRegexHarper.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/1529913_744630922214259_657723082_o.jpg");
     this.res.end();
