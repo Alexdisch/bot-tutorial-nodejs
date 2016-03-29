@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexHarper = /^\/harp/;botRegexBurn = /^\/burn/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexHarper = /^\/harp/;botRegexBurn = /^\/burn/;botRegexTom = /^\/tom/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/
@@ -34,6 +34,11 @@ function respond() {
     postMessage("http://45.media.tumblr.com/tumblr_ly1efoFthg1r4ghkoo1_500.gif");
     this.res.end();
   } 
+  else if(request.text && botRegexTom.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://media.giphy.com/media/Nccs0rNvVC1nG/giphy.gif");
+    this.res.end();
+  }
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
