@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexHarper = /^\/harp/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexHarper = /^\/harp/;botRegexBurn = /^\/burn/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/
@@ -27,6 +27,11 @@ function respond() {
   else if(request.text && botRegexHarper.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://36.media.tumblr.com/06086ac9d889c7729d928d4aa5d1405b/tumblr_nk8g0fFErk1s2yr14o1_1280.jpg");
+    this.res.end();
+  } 
+  else if(request.text && botRegexBurn.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://s-media-cache-ak0.pinimg.com/736x/e1/c9/34/e1c9347933bba099ddd785ac5190fa7d.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
