@@ -39,7 +39,7 @@ function respond() {
     postMessage("https://media.giphy.com/media/Nccs0rNvVC1nG/giphy.gif");
     this.res.end();
   } 
-  else if(request.text && botRegexJJ.test(request.text)) {
+  else if(request.text && botRegexjj.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media.giphy.com/media/ZQnr4SydezPLG/giphy.gif");
     this.res.end();
