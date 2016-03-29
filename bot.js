@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexHarper = /^\/harp/;botRegexBurn = /^\/burn/;botRegexTom = /^\/tom/;botRegexOdell = /^\/odell/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexHarper = /^\/harp/;botRegexBurn = /^\/burn/;botRegexTom = /^\/tom/;botRegexJJ = /^\/JJ/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/
@@ -39,9 +39,9 @@ function respond() {
     postMessage("https://media.giphy.com/media/Nccs0rNvVC1nG/giphy.gif");
     this.res.end();
   } 
-  else if(request.text && botRegexOdell.test(request.text)) {
+  else if(request.text && botRegexJJ.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.giphy.com/media/jprsG5ENT3EM8/giphy.gif");
+    postMessage("https://media.giphy.com/media/ZQnr4SydezPLG/giphy.gif");
     this.res.end();
   }
   else if(request.text && botRegexAd.test(request.text)) {
