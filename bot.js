@@ -46,7 +46,7 @@ function respond() {
   } 
   else if(request.text && botRegexTime.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.giphy.com/media/10PcMWwtZSYk2k/giphy.gif");
+    postMessage("https://media.giphy.com/media/ZQnr4SydezPLG/giphy.gif");
     this.res.end();
   }
   else if(request.text && botRegexAd.test(request.text)) {
