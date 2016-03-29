@@ -31,7 +31,7 @@ function respond() {
   } 
   else if(request.text && botRegexBurn.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://s-media-cache-ak0.pinimg.com/736x/e1/c9/34/e1c9347933bba099ddd785ac5190fa7d.jpg");
+    postMessage("http://45.media.tumblr.com/tumblr_ly1efoFthg1r4ghkoo1_500.gif");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
