@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexHarper = /^\/harp/;botRegexBurn = /^\/burn/;botRegexTom = /^\/tom/;botRegexjj = /^\/jj/;botRegexRules = /^\/rules/;
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexHarper = /^\/pumped/;botRegexHarper = /^\/pumped/;botRegexBurn = /^\/burn/;botRegexTom = /^\/tom/;botRegexjj = /^\/jj/;botRegexRules = /^\/rules/;
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/
@@ -27,6 +27,11 @@ function respond() {
   else if(request.text && botRegexHarper.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://36.media.tumblr.com/06086ac9d889c7729d928d4aa5d1405b/tumblr_nk8g0fFErk1s2yr14o1_1280.jpg");
+    this.res.end();
+  } 
+    else if(request.text && botRegexPumped.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://media.giphy.com/media/3oEduY8Kh1AoOWUBnW/giphy.gif");
     this.res.end();
   } 
   else if(request.text && botRegexBurn.test(request.text)) {
