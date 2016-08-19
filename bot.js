@@ -59,7 +59,7 @@ function respond() {
     postMessage("http://daddyleagues.com/PMC/rules");
     this.res.end();
   } 
-  else if(request.text && botRegexReid.test(request.text)) {
+  else if(request.text && botRegexreid.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media4.giphy.com/media/g9RplpKZNkT5u/giphy.gif");
     this.res.end();
