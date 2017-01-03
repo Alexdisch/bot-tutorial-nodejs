@@ -76,7 +76,7 @@ function respond() {
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
-    //postMessage("http://daddyleagues.com/NLB/team/"+request.text.substring(5,8)+"/depthchart");
+    //postMessage("http://daddyleagues.com/CANDC/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   
@@ -97,18 +97,18 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/NLB/rules");
+    postMessage("https://www.daddyleagues.com/CANDC/rules");
     this.res.end();
   } 
   else if(request.text && botRegexTrades.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/NLB/forum/forum/6003");
+    postMessage("http://daddyleagues.com/CANDC/forum/forum/6591");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
     
-    postMessage("http://daddyleagues.com/NLB/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/CANDC/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
