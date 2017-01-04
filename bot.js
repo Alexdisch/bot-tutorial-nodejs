@@ -75,7 +75,7 @@ function respond() {
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
+    postMessage("http://daddyleagues.com/CandC/players?name=&position=all&team="+request.text.substring(5,8));
     //postMessage("http://daddyleagues.com/CANDC/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
@@ -115,7 +115,7 @@ function respond() {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://www.daddyleagues.com/maddenrating?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/CandC/players?name="+rep+"&position=all&team=all");
     
     this.res.end();
   }  
