@@ -82,7 +82,7 @@ function respond() {
   
   else if(request.text && botRegexOW.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("www.daddyleagues.com/maddenrating/");
+    postMessage("www.daddyleagues.com/candc/maddenrating/");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -102,7 +102,7 @@ function respond() {
   } 
   else if(request.text && botRegexTrades.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/CANDC/forum/forum/6591");
+    postMessage("http://daddyleagues.com/CandC/forum");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
