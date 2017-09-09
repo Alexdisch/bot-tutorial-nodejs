@@ -11,7 +11,7 @@ function respond() {
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexBurn = /^\/burn/; botRegexDrink = /^\/drink/;
       botRegexReid = /^\/reid/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexLyd = /^\/lyd/;
-      botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
+      botRegexHarper = /^\/harper/; botRegexGooden = /^\/gooden/; botRegexCheesy = /^\/cheesy/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -58,31 +58,31 @@ function respond() {
     postMessage("https://media2.giphy.com/media/pUeXcg80cO8I8/200.gif#4");
     this.res.end();
   } 
-  else if(request.text && botRegexGian.test(request.text)) {
+  else if(request.text && botRegexHarper.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/9V6ZnvD.png");
+    postMessage("https://i.imgur.com/qTkLD6V.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexScrotes.test(request.text)) {
+  else if(request.text && botRegexGooden.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1006x1340.jpeg.730381e4280e4028b8375432af14f39f.large");
+    postMessage("https://scontent.ford1-1.fna.fbcdn.net/v/t1.0-9/15826744_10209145069717099_8029939462810176348_n.jpg?oh=7a85b5c900234acca9a516e4de1f5e36&oe=592150A9");
     this.res.end();
   } 
-  else if(request.text && botRegexShaki.test(request.text)) {
+  else if(request.text && botRegexCheesy.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/305x375.jpeg.a8dd3aa18c7a4963a553e6dc16bcb100.large");
+    postMessage("https://media.giphy.com/media/oGBw7OaVBei1W/giphy.gif");
     this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/CandC/players?name=&position=all&team="+request.text.substring(5,8));
-    //postMessage("http://daddyleagues.com/CANDC/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/LL1/players?name=&position=all&team="+request.text.substring(5,8));
+    //postMessage("http://daddyleagues.com/LL1/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   
   else if(request.text && botRegexOW.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("www.daddyleagues.com/candc/maddenrating/");
+    postMessage("www.daddyleagues.com/LL1/maddenrating/");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -97,25 +97,25 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/CANDC/rules");
+    postMessage("https://www.daddyleagues.com/LL1/rules");
     this.res.end();
   } 
   else if(request.text && botRegexTrades.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/CandC/forum");
+    postMessage("https://www.daddyleagues.com/LL1/forum");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
     
-    postMessage("http://daddyleagues.com/CANDC/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/LL1/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/CandC/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/LL1/players?name="+rep+"&position=all&team=all");
     
     this.res.end();
   }  
