@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/advance/;botRegexTrades = /^\/trades/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
-      botRegexBurn = /^\/burn/; botRegexDrink = /^\/drink/;
+      botRegexBurn = /^\/burn/; botRegexMia = /^\/mia/;
       botRegexReid = /^\/reid/;botRegexKys = /^\/kys/; botRegexAbella = /^\/abella/; botRegexLyd = /^\/lyd/;
       botRegexHarper = /^\/harper/; botRegexGooden = /^\/gooden/; botRegexCheesy = /^\/cheesy/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/;
@@ -28,9 +28,9 @@ function respond() {
     postMessage("https://media.giphy.com/media/pQmWjYrz39YAg/giphy.gif");
     this.res.end();
   } 
-  else if(request.text && botRegexDrink.test(request.text)) {
+  else if(request.text && botRegexMia.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.giphy.com/media/3o7TKBcK5ywsaeBm4U/giphy.gif");
+    postMessage("https://media2.giphy.com/media/YYlZZK2n7LPzy/giphy.gif");
     this.res.end();
   } 
   else if(request.text && botRegexReid.test(request.text)) {
