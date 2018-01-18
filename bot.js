@@ -45,7 +45,7 @@ function respond() {
   } 
   else if(request.text && botRegexAbella.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.julesjordan.com/trial/content//upload/julesjordan/once_you_go_black_6_scene_1/1024watermarked/julesjordan_com-4.jpg");
+    postMessage("https://media2.giphy.com/media/NUgdjDjiDsHQI/giphy.gif");
     this.res.end();
   } 
   else if(request.text && botRegexDaf.test(request.text)) {
