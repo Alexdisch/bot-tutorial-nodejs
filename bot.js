@@ -45,7 +45,7 @@ function respond() {
   } 
   else if(request.text && botRegexAbella.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media2.giphy.com/media/NUgdjDjiDsHQI/giphy.gif");
+    postMessage("https://images.sex.com/images/pinporn/2016/06/08/300/15878773.gif");
     this.res.end();
   } 
   else if(request.text && botRegexDaf.test(request.text)) {
