@@ -75,14 +75,14 @@ function respond() {
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/ll1/players?name=&position=all&team="+request.text.substring(5,8));
-    //postMessage("http://daddyleagues.com/ll1/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/pmc/players?name=&position=all&team="+request.text.substring(5,8));
+    //postMessage("http://daddyleagues.com/pmc/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   
   else if(request.text && botRegexOW.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("www.daddyleagues.com/ll1/maddenrating/");
+    postMessage("www.daddyleagues.com/pmc/maddenrating/");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -97,25 +97,25 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/ll1/rules");
+    postMessage("https://www.daddyleagues.com/pmc/rules");
     this.res.end();
   } 
   else if(request.text && botRegexTrades.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/ll1/forum");
+    postMessage("https://www.daddyleagues.com/pmc/forum");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
     
-    postMessage("http://daddyleagues.com/ll1/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/pmc/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/ll1/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/pmc/players?name="+rep+"&position=all&team=all");
     
     this.res.end();
   }  
