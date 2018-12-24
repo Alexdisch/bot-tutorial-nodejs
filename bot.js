@@ -11,7 +11,7 @@ function respond() {
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexBurn = /^\/burn/; botRegexDrink = /^\/drink/;
       botRegexReid = /^\/reid/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexLyd = /^\/lyd/;
-      botRegexHarper = /^\/harper/; botRegexGooden = /^\/gooden/; botRegexCheesy = /^\/cheesy/;
+      botRegexHarper = /^\/harper/; botRegexApex = /^\/apex/; botRegexCheesy = /^\/cheesy/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -63,9 +63,9 @@ function respond() {
     postMessage("https://i.imgur.com/qTkLD6V.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexGooden.test(request.text)) {
+  else if(request.text && botRegexApex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://scontent.ford1-1.fna.fbcdn.net/v/t1.0-9/15826744_10209145069717099_8029939462810176348_n.jpg?oh=7a85b5c900234acca9a516e4de1f5e36&oe=592150A9");
+    postMessage("https://giphy.com/embed/fDO2Nk0ImzvvW");
     this.res.end();
   } 
   else if(request.text && botRegexCheesy.test(request.text)) {
